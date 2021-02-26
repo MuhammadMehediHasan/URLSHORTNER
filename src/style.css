@@ -1,0 +1,93 @@
+/*** Importing Nunito Fonts ***/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #fafafa;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    background-color: #f6f6f6;
+    /* background-color: #685858; */
+    justify-content: space-between;
+    color: #333333;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.nav-item.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    
+}
+
+.nav-item {
+    padding: .3rem;
+    width: 100%;
+    text-align: center;
+    border-radius: .3rem;
+}
+
+.nav-item:not(.logo) {
+    /* background-color: #333333; */
+    padding: .5rem;
+    font-weight: 500;
+}
+
+.nav-item:hover {
+    background-color: #ebebeb;
+    cursor: pointer;
+    box-shadow: 0 0 10px #ebebeb;
+}
+
+
+.nav-item > .link {
+    text-decoration: none;
+    color: #333333;
+}
+
+
+.body_content {
+    padding: 1rem;
+}
+
+
+.input-group {
+    /* background-color: #333333; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+.input-group > .input {
+    border: none;
+    outline: none;
+    padding: .3rem;
+    font-size: 1rem;
+    background: #333333;
+    color: #fafafa;
+}
+
+.input-group > .input[type="text"] {
+    background-color: #ebebeb;
+    color: #333333;
+    user-select: all;
+}
+
+.input-group > .input:first-child {
+    border-top-left-radius: .4rem;
+    border-bottom-left-radius: .4rem;
+}
+.input-group > .input:last-child {
+    border-top-right-radius: .4rem;
+    border-bottom-right-radius: .4rem;
+}
+
+.hide {
+    display: none;
+}
